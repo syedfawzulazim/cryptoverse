@@ -10,6 +10,7 @@ const { Option } = Select;
 
 const News = ({ simplified }) => {
   const [newsCategory, setNewscategoty] = useState("Cryptocurrency");
+
   const { data: cryptoNews } = useGetCryptoNewsQuery({
     newsCategory,
     count: simplified ? 6 : 12,
@@ -18,6 +19,7 @@ const News = ({ simplified }) => {
   const { data } = useGetCryptosQuery(100);
 
   if (!cryptoNews?.value) return "Loading...";
+
   return (
     <div>
       <Row gutter={[24, 24]}>
