@@ -53,7 +53,7 @@ const CryptoDetails = () => {
     { title: "Rank", value: cryptoDetails?.rank, icon: <NumberOutlined /> },
     {
       title: "24h Change",
-      value: `${cryptoDetails?.change && millify(cryptoDetails?.change)}%`,
+      value: ` ${cryptoDetails?.change && millify(cryptoDetails?.change)}%`,
       icon: <ThunderboltOutlined />,
     },
     {
@@ -133,6 +133,11 @@ const CryptoDetails = () => {
           <Option key={date}>{date}</Option>
         ))}
       </Select>
+      <LineChart
+        coinHistory={coinHistory}
+        currentPrice={millify(cryptoDetails?.price)}
+        coinName={cryptoDetails?.name}
+      />
       <Col className="stats-container">
         <Col className="coin-value-statistics">
           <Col className="coin-value-statistics-heading">
@@ -172,40 +177,30 @@ const CryptoDetails = () => {
           ))}
         </Col>
       </Col>
+      <Col className="coin-desc-link">
+        <Row className="coin-desc">
+          <Title level={3} className="coin-details-heading">
+            What is {cryptoDetails.name}?
+          </Title>
+          {HTMLReactParser(cryptoDetails.description)}
+        </Row>
+        <Col className="coin-links">
+          <Title level={3} className="coin-details-heading">
+            {cryptoDetails.name} Links
+          </Title>
+          {cryptoDetails.links?.map((link) => (
+            <Row className="coin-link" key={link.name}>
+              <Title level={5} className="link-name">
+                {link.type}
+              </Title>
+              <a href={link.url} target="_blank" rel="noreferrer">
+                {link.name}
+              </a>
+            </Row>
+          ))}
+        </Col>
+      </Col>
     </>
-    //
-    //   <LineChart
-    //     coinHistory={coinHistory}
-    //     currentPrice={millify(cryptoDetails?.price)}
-    //     coinName={cryptoDetails?.name}
-    //   />
-    //
-
-    //   </Col>
-    //   <Col className="coin-desc-link">
-    //     <Row className="coin-desc">
-    //       <Title level={3} className="coin-details-heading">
-    //         What is {cryptoDetails.name}?
-    //       </Title>
-    //       {HTMLReactParser(cryptoDetails.description)}
-    //     </Row>
-    //     <Col className="coin-links">
-    //       <Title level={3} className="coin-details-heading">
-    //         {cryptoDetails.name} Links
-    //       </Title>
-    //       {cryptoDetails.links?.map((link) => (
-    //         <Row className="coin-link" key={link.name}>
-    //           <Title level={5} className="link-name">
-    //             {link.type}
-    //           </Title>
-    //           <a href={link.url} target="_blank" rel="noreferrer">
-    //             {link.name}
-    //           </a>
-    //         </Row>
-    //       ))}
-    //     </Col>
-    //   </Col>
-    // </Col>
   );
 };
 export default CryptoDetails;
