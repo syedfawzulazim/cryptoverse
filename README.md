@@ -8,13 +8,22 @@ This website provides real-time data (price, volume, market capital, max supply,
   - Chartjs
   - Ant Design 
   
-This site was built using [GitHub Pages](https://pages.github.com/).
+Live Demo :  [Cryptoverse](https://tender-euclid-922226.netlify.app).
 
-## Some Screen Shots:
-![4](https://user-images.githubusercontent.com/37554815/157164839-6f2d2e4e-25cf-424f-96c6-265a11f164ae.JPG)
+## Project Screen-Shots:
+
+![4](https://user-images.githubusercontent.com/37554815/157346251-8597efeb-ea1c-4245-bc97-4aac33d58655.JPG)
+
 ![6](https://user-images.githubusercontent.com/37554815/157164847-e810983d-67a1-4aff-8f4e-ffa2d187bcc7.JPG)
+![9](https://user-images.githubusercontent.com/37554815/157346775-df2c02ee-e305-42f1-ab19-1966bb8e6db5.JPG)
+![10](https://user-images.githubusercontent.com/37554815/157347168-5c4dc476-3c1e-48da-b2da-ddef1b830694.JPG)
 
-<details><summary>More Screen Shots</summary>
+
+
+
+
+
+<details><summary>See More Screen-Shots</summary>
 <p>
 
 #### 
