@@ -15,8 +15,7 @@ Live Demo :  [Cryptoverse](https://tender-euclid-922226.netlify.app).
 ![4](https://user-images.githubusercontent.com/37554815/157346251-8597efeb-ea1c-4245-bc97-4aac33d58655.JPG)
 
 ![6](https://user-images.githubusercontent.com/37554815/157164847-e810983d-67a1-4aff-8f4e-ffa2d187bcc7.JPG)
-![9](https://user-images.githubusercontent.com/37554815/157346775-df2c02ee-e305-42f1-ab19-1966bb8e6db5.JPG)
-![10](https://user-images.githubusercontent.com/37554815/157347168-5c4dc476-3c1e-48da-b2da-ddef1b830694.JPG)
+
 
 
 
